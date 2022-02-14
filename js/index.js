@@ -34,5 +34,6 @@ async function postFormDataAsJson({url, formData}) {
         throw new Error(errorMessage);
     }
     alert("Home added successfully");
+    myForm.reset()
     return response.json();
 }
