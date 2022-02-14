@@ -1,3 +1,6 @@
+function showForm() {
+    document.getElementById('my-Form').style.display = 'block';
+}
 const myForm = document.getElementById("my-Form")
 myForm.addEventListener("submit", handleFormSubmit);
 
