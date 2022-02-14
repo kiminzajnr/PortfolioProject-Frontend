@@ -29,12 +29,10 @@ async function postFormDataAsJson({url, formData}) {
     const response = await fetch(url, fetchOptions);
 
     if (!response.ok) {
-        myForm.reset();
         alert("something went wrong, try again");
         const errorMessage = await response.text();
         throw new Error(errorMessage);
     }
     alert("Home added successfully");
-    myForm.reset();
     return response.json();
 }
