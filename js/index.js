@@ -38,5 +38,6 @@ async function postFormDataAsJson({url, formData}) {
     }
     alert("Home added successfully");
     myForm.reset()
+    document.getElementById('my-Form').style.display = 'none';
     return response.json();
 }
