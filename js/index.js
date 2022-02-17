@@ -1,8 +1,10 @@
 function showForm() {
     document.getElementById('my-Form').style.display = 'block';
 }
-const myForm = document.getElementById("my-Form")
+const myForm = document.getElementById("my-Form");
 myForm.addEventListener("submit", handleFormSubmit);
+const groupForm = document.getElementById("groupForm");
+groupForm.addEventListener(submit, handleFormSubmit);
 
 async function handleFormSubmit(event) {
     event.preventDefault();
