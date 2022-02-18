@@ -1,6 +1,8 @@
 <html>
     <head>
         <title>OFAN</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
         <link rel="stylesheet" type="text/css" href="Style/styles.css" />
     </head>
     <body>
@@ -9,7 +11,7 @@
             <ul>
                 <li>
                     <input type="text" name="home_name" class="field-style field-split align-left" placeholder="Home Name" required />
-                    <input type="text" name="location" class="field-style field-split align-right" placeholder="location" required />       
+                    <input type="text" name="location" class="field-style field-split align-right" placeholder="location" required />      
                 </li>
                 <li>
                     <input type="text" name="contact" class="field-style field-split align-left" placeholder="Phone" required />
@@ -20,14 +22,14 @@
                 </li>
             </ul>
         </form>
-        <form action="https://kiminza.pythonanywhere.com/groups/" class="form-style-9" id="GroupForm">
+        <form action="http://127.0.0.1:8000/groups/" method="POST" class="form-style-9" id="GroupForm">
             <ul>
                 <li>
                     <input type="text" name="group_name" class="field-style field-split align-left" placeholder="Group Name" required />
                     <input type="text" name="created_by" class="field-style field-split align-right" placeholder="Your Name" required />
                 </li>
                 <li>
-                    <input type="datetime-local" name="visit_date" class="field-style field-split align-left" required />
+                    <input id="datetimefield" name="visit_date" class="field-style field-split align-left" placeholder="Date and Time of Visit" required />
                     <input type="text" name="home_name" class="field-style field-split align-right" placeholder="Home Name" required />
                 </li>
                 <li>
