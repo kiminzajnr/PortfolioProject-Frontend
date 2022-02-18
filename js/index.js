@@ -1,10 +1,20 @@
 function showForm() {
     document.getElementById('my-Form').style.display = 'block';
 }
+
+// This code activates flatpickr on fields with the 'datetimefield' class when the document has loaded
+window.addEventListener("DOMContentLoaded", function () {
+    flatpickr("#datetimefield", {
+        enableTime: true,
+        enableSeconds: true,
+        dateFormat: "Y-m-d H:i:S",
+    });
+});
+
 const myForm = document.getElementById("my-Form");
 myForm.addEventListener("submit", handleFormSubmit);
-const groupForm = document.getElementById("groupForm");
-groupForm.addEventListener(submit, handleFormSubmit);
+const groupForm = document.getElementById("GroupForm");
+groupForm.addEventListener("submit", handleFormSubmit);
 
 async function handleFormSubmit(event) {
     event.preventDefault();
