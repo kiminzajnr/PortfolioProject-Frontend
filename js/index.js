@@ -1,12 +1,22 @@
-fetch('https://kiminza.pythonanywhere.com/groups/').then((response) => {
-    return response.json()
-})
-.then((data) => {
-    console.log(data)
-})
-.catch((error) => {
-    console.error(error)
-})
+async function getGroup () {
+    try {
+      const response1 = await fetch('https://kiminza.pythonanywhere.com/Join_Group/')
+      const datas = await response1.json()
+      for (const data of datas) {
+        console.log(data.group_name)
+        const response2 = await fetch(data.group_name)
+        const names = await response2.json()
+        console.log(names.group_name)
+        optionText = names.group_name;
+        optionValue = data.group_name;
+        $('#form-control').append(new Option(optionText, optionValue))
+      }
+    }
+    catch (error) {
+      console.error(error)
+    }
+}
+getGroup()
 
 function showForm() {
     document.getElementById('my-Form').style.display = 'block';
@@ -25,8 +35,8 @@ const myForm = document.getElementById("my-Form");
 myForm.addEventListener("submit", handleFormSubmit);
 const groupForm = document.getElementById("GroupForm");
 groupForm.addEventListener("submit", handleFormSubmit);
-// const joinForm = document.getElementById("JoinForm")
-// joinForm.addEventListener("submit", handleFormSubmit);
+const joinForm = document.getElementById("JoinForm")
+joinForm.addEventListener("submit", handleFormSubmit);
 
 async function handleFormSubmit(event) {
     event.preventDefault();
