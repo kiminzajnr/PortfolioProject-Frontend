@@ -1,3 +1,7 @@
+fetch('https://kiminza.pythonanywhere.com/groups/').then((response) => {
+    console.log(response.json())
+})
+
 function showForm() {
     document.getElementById('my-Form').style.display = 'block';
 }
@@ -15,6 +19,8 @@ const myForm = document.getElementById("my-Form");
 myForm.addEventListener("submit", handleFormSubmit);
 const groupForm = document.getElementById("GroupForm");
 groupForm.addEventListener("submit", handleFormSubmit);
+const joinForm = document.getElementById("JoinForm")
+joinForm.addEventListener("submit", handleFormSubmit);
 
 async function handleFormSubmit(event) {
     event.preventDefault();
@@ -48,7 +54,7 @@ async function postFormDataAsJson({url, formData}) {
         const errorMessage = await response.text();
         throw new Error(errorMessage);
     }
-    alert("Home added successfully");
+    alert("operation successfully");
     myForm.reset()
     document.getElementById('my-Form').style.display = 'none';
     return response.json();
