@@ -37,9 +37,7 @@ function appendData (data) {
     // const mainContainer = document.getElementById("myData");
     for (const data_ of data){
         const div = document.createElement("div");
-        div.style.width = "100px";
-        div.style.height = "100px";
-        div.style.background = "red";
+        div.className = "card";
         div.innerHTML += `<h3><b> ${data_.home_name} </b></h3>`;
         div.innerHTML += `<h5><b> ${data_.contact} </b></h5>`;
         div.innerHTML += `<h5><b> ${data_.location} </b></h5>`;
