@@ -38,8 +38,11 @@ function appendData (data) {
     for (const data_ of data){
         const div = document.createElement("div");
         div.innerHTML = data_.home_name;
+        mainContainer.append(div)
         div.innerHTML = data_.contact;
+        mainContainer.append(div)
         div.innerHTML = data_.location;
+        mainContainer.append(div)
         div.innerHTML = data_.capacity;
         mainContainer.append(div)
     }
