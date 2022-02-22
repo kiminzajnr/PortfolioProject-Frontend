@@ -39,9 +39,9 @@ function appendData (data) {
         const div = document.createElement("div");
         div.className = "card";
         div.innerHTML += `<h3><b> ${data_.home_name} </b></h3>`;
-        div.innerHTML += `<h5><b> ${data_.contact} </b></h5>`;
-        div.innerHTML += `<h5><b> ${data_.location} </b></h5>`;
-        div.innerHTML += `<h5><b> ${data_.capacity} </b></h5>`;
+        div.innerHTML += `<h5><b> Phone: ${data_.contact} </b></h5>`;
+        div.innerHTML += `<h5><b> Location: ${data_.location} </b></h5>`;
+        div.innerHTML += `<h5><b> We have ${data_.capacity} Childrens</b></h5>`;
         document.body.appendChild(div)
     }
 }
