@@ -18,8 +18,22 @@
 // }
 // getGroup()
 
+function myFunction() {
+    const navbar_ = document.getElementById("myTopnav");
+    if (navbar_.className === "topnav") {
+        navbar_ += " responsive";
+    } else {
+        navbar_ = "topnav";
+    }
+}
+
 function showForm() {
     document.getElementById('my-Form').style.display = 'block';
+    document.getElementById('planVisit').style.display = 'none';
+}
+function showVisitForm() {
+    document.getElementById('planVisit').style.display = 'block';
+    document.getElementById('my-Form').style.display = 'none';
 }
 
 fetch('https://kiminza.pythonanywhere.com/homes/')
@@ -39,7 +53,7 @@ function appendData (data) {
         const div = document.createElement("div");
         div.className = "card";
         div.innerHTML += `<h3><b> ${data_.home_name} </b></h3>`;
-        div.innerHTML += `<h5><b> Phon: ${data_.contact} </b></h5>`;
+        div.innerHTML += `<h5><b> Phone: ${data_.contact} </b></h5>`;
         div.innerHTML += `<h5><b> Location: ${data_.location} </b></h5>`;
         div.innerHTML += `<h5><b> We have ${data_.capacity} Childrens</b></h5>`;
         document.body.appendChild(div)
