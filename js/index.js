@@ -38,10 +38,10 @@ function appendData (data) {
     for (const data_ of data){
         const div = document.createElement("div");
         div.className = "card";
-        div.appendChild += `<h3><b> ${data_.home_name} </b></h3>`;
-        div.appendChild += `<h5><b> Phone: ${data_.contact} </b></h5>`;
-        div.appendChild += `<h5><b> Location: ${data_.location} </b></h5>`;
-        div.appendChild += `<h5><b> We have ${data_.capacity} Childrens</b></h5>`;
+        div.innerHTML += `<h3><b> ${data_.home_name} </b></h3>`;
+        div.innerHTML += `<h5><b> Phone: ${data_.contact} </b></h5>`;
+        div.innerHTML += `<h5><b> Location: ${data_.location} </b></h5>`;
+        div.innerHTML += `<h5><b> We have ${data_.capacity} Childrens</b></h5>`;
         document.body.appendChild(div)
     }
 }
