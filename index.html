@@ -1,12 +1,21 @@
 <html>
     <head>
         <title>OFAN</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
         <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
         <link rel="stylesheet" type="text/css" href="Style/styles.css" />
     </head>
     <body>
-        <button class="_btn" type="button" value="Register a Home" onclick="showForm()">Register a Home</button>
+        <div class="topnav" id="myTopnav" >
+            <a href="javascript:void(0);" onclick="showForm()">Register a Home</a>
+            <a href="javascript:void(0);" onclick="showVisitForm()">Plan a Visit To a Home</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
         <form action="https://kiminza.pythonanywhere.com/homes/" class="form-style-9" id="my-Form">
             <ul>
                 <li>
@@ -22,7 +31,7 @@
                 </li>
             </ul>
         </form>
-        <form action="https://kiminza.pythonanywhere.com/groups/" method="POST" class="form-style-9" id="GroupForm">
+        <form action="https://kiminza.pythonanywhere.com/groups/" method="POST" class="form-style-9" id="planVisit">
             <ul>
                 <li>
                     <input type="text" name="group_name" class="field-style field-split align-left" placeholder="Group Name" required />
@@ -37,7 +46,7 @@
                 </li>
             </ul>
         </form>
-        <form action="http://127.0.0.1:8000/Join_Group/" method="POST" class="form-style-9" id="JoinForm">
+        <form action="http://127.0.0.1:8000/Join_Group/" method="POST" class="form-style-9" id="my-Form">
             <ul>
                 <li>
                     <input type="text" name="member_name" class="field-style field-split align-left" placeholder="Your Name" required />
