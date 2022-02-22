@@ -42,8 +42,8 @@ function appendData (data) {
         div.innerHTML += `<h5><b> ${data_.contact} </b></h5>`;
         div.innerHTML += `<h5><b> ${data_.location} </b></h5>`;
         div.innerHTML += `<h5><b> ${data_.capacity} </b></h5>`;
+        document.body.appendChild(div)
     }
-    document.body.appendChild(div)
 }
 
 // This code activates flatpickr on fields with the 'datetimefield' class when the document has loaded
