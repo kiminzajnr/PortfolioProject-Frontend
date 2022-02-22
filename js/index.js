@@ -35,15 +35,17 @@ fetch('https://kiminza.pythonanywhere.com/homes/')
 
 function appendData (data) {
     // const mainContainer = document.getElementById("myData");
-    const div = document.createElement("div");
     for (const data_ of data){
+        const div = document.createElement("div");
+        div.style.width = "100px";
+        div.style.height = "100px";
+        div.style.background = "red";
         div.innerHTML += `<h3><b> ${data_.home_name} </b></h3>`;
         div.innerHTML += `<h5><b> ${data_.contact} </b></h5>`;
         div.innerHTML += `<h5><b> ${data_.location} </b></h5>`;
         div.innerHTML += `<h5><b> ${data_.capacity} </b></h5>`;
-        
+        document.body.appendChild(div)   
     }
-    document.body.appendChild(div)
 }
 
 // This code activates flatpickr on fields with the 'datetimefield' class when the document has loaded
