@@ -1,4 +1,5 @@
 .card {
+	cursor: pointer;
 	display: inline-block;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
@@ -30,7 +31,7 @@
 	margin: 50px auto;
 	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
 	border-radius: 10px;
-	border: 6px solid #305A72;
+	border: none;
 }
 .form-style-9 ul{
 	padding:0;
