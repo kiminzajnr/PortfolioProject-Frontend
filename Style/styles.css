@@ -9,12 +9,15 @@
 	padding-right: 30px;
 	padding-bottom: 30px;
 	padding-left: 50px;
-	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	margin-right: 50px;
+	margin-left: 50px;
 }
   
 .card:hover {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  } 
+} 
 #my-Form {
 	position: absolute;
 	display: none;
