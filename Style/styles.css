@@ -200,15 +200,3 @@
 	user-select: none;
 	-webkit-user-select: none;
 	touch-action: manipulation;
-  }
-  @media screen and (min-width: 601px) {
-	div.center {
-	  font-size: 80px;
-	}
-  }
-  
-  @media screen and (max-width: 600px) {
-	div.center {
-	  font-size: 30px;
-	}
-  }
