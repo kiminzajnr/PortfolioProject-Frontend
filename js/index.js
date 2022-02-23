@@ -1,22 +1,16 @@
-// async function getGroup () {
-//     try {
-//       const response1 = await fetch('https://kiminza.pythonanywhere.com/Join_Group/')
-//       const datas = await response1.json()
-//       for (const data of datas) {
-//         console.log(data.group_name)
-//         const response2 = await fetch(data.group_name)
-//         const names = await response2.json()
-//         console.log(names.group_name)
-//         optionText = names.group_name;
-//         optionValue = data.group_name;
-//         $('#form-control').append(new Option(optionText, optionValue))
-//       }
-//     }
-//     catch (error) {
-//       console.error(error)
-//     }
-// }
-// getGroup()
+$(document).mouseup(function(e) {
+    const container = $("#my-Form");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+        container.hide();
+    }
+});
+$(document).mouseup(function(e) {
+    const container = $("#planVisit");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+        container.hide();
+    }
+});
+
 
 function myFunction() {
     const navbar_ = document.getElementById("myTopnav");
