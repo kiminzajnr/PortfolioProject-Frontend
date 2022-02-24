@@ -30,6 +30,13 @@ function showVisitForm() {
     document.getElementById('my-Form').style.display = 'none';
 }
 
+function openForm() {
+    document.getElementById("PayForm").style.display = "block";
+}
+function closeForm() {
+    document.getElementById("PayForm").style.display = "none";
+}
+
 fetch('https://kiminza.pythonanywhere.com/homes/')
 .then(function (response) {
     return response.json();
@@ -52,6 +59,10 @@ function appendData (data) {
         div.innerHTML += `<h5><b> We have ${data_.capacity} Childrens</b></h5>`;
         document.body.appendChild(div)
     }
+}
+
+document.getElementsByClassName(".card").onclick = function() {
+    openForm();
 }
 
 // This code activates flatpickr on fields with the 'datetimefield' class when the document has loaded
