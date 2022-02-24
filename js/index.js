@@ -58,9 +58,10 @@ function appendData (data) {
         div.innerHTML += `<h5><b> Location: ${data_.location} </b></h5>`;
         div.innerHTML += `<h5><b> We have ${data_.capacity} Childrens</b></h5>`;
         document.body.appendChild(div)
-    }
-    div.onclick = function() {
-        openForm()
+
+        div.onclick = function() {
+            openForm()
+        }
     }
 }
 
