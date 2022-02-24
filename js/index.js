@@ -62,7 +62,7 @@ function appendData (data) {
 }
 
 document.getElementsByClassName(".card").onclick = function() {
-    openForm();
+    document.getElementById("PayForm").style.display = "block";
 }
 
 // This code activates flatpickr on fields with the 'datetimefield' class when the document has loaded
@@ -76,10 +76,10 @@ window.addEventListener("DOMContentLoaded", function () {
 
 const myForm = document.getElementById("my-Form");
 myForm.addEventListener("submit", handleFormSubmit);
-const groupForm = document.getElementById("GroupForm");
+const groupForm = document.getElementById("planVisit");
 groupForm.addEventListener("submit", handleFormSubmit);
-const joinForm = document.getElementById("JoinForm")
-joinForm.addEventListener("submit", handleFormSubmit);
+// const joinForm = document.getElementById("JoinForm")
+// joinForm.addEventListener("submit", handleFormSubmit);
 
 async function handleFormSubmit(event) {
     event.preventDefault();
