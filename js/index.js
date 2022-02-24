@@ -59,10 +59,9 @@ function appendData (data) {
         div.innerHTML += `<h5><b> We have ${data_.capacity} Childrens</b></h5>`;
         document.body.appendChild(div)
     }
-}
-
-document.getElementsByClassName(".card").onclick = function() {
-    document.getElementById("PayForm").style.display = "block";
+    div.onclick = function() {
+        openForm()
+    }
 }
 
 // This code activates flatpickr on fields with the 'datetimefield' class when the document has loaded
