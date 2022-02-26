@@ -13,11 +13,11 @@ $(document).mouseup(function(e) {
 
 
 function myFunction() {
-    const navbar_ = document.getElementById("myTopnav");
+    let navbar_ = document.getElementById("myTopnav");
     if (navbar_.className === "topnav") {
         navbar_ += " responsive";
     } else {
-        navbar_ = "topnav";
+        navbar_.className = "topnav";
     }
 }
 
@@ -58,10 +58,6 @@ function appendData (data) {
         div.innerHTML += `<h5><b> Location: ${data_.location} </b></h5>`;
         div.innerHTML += `<h5><b> We have ${data_.capacity} Childrens</b></h5>`;
         document.body.appendChild(div)
-
-        div.onclick = function() {
-            openForm()
-        }
     }
 }
 
