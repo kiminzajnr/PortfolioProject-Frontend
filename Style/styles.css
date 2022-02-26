@@ -17,17 +17,28 @@
 h1 {
   font-size: 3.2vw;
 }
+.banner {
+  text-align: center;
+  font-size: 1.4vw;
+}
+a {
+  text-decoration: none;
+}
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 #my-Form {
-  position: absolute;
   display: none;
+  position: fixed;
+  top: 0;
+  left: 10px;
 }
 #planVisit {
-  position: absolute;
   display: none;
+  position: fixed;
+  top: 0;
+  left: 10px;
 }
 .form-style-9 {
   max-width: 450px;
@@ -114,9 +125,8 @@ body {
 }
 
 .topnav {
-  position: sticky;
   overflow: hidden;
-  background-color: rgb(58, 47, 47);
+  background-color: #333;
 }
 .topnav a {
   float: left;
