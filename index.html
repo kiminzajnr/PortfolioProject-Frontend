@@ -10,7 +10,7 @@
     </head>
     <body>
         <div class="topnav" id="myTopnav" >
-            <a href="javascript:void(0);" onclick="showForm()">Register a Home</a>
+            <a href="javascript:void(0);" class="active" onclick="showForm()">Register a Home</a>
             <a href="javascript:void(0);" onclick="showVisitForm()">Plan a Visit To a Home</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
@@ -25,6 +25,7 @@
             </div>
         </div>
         <form action="https://kiminza.pythonanywhere.com/homes/" class="form-style-9" id="my-Form">
+            <p>Register a Home</p>
             <ul>
                 <li>
                     <input type="text" name="home_name" class="field-style field-split align-left" placeholder="Home Name" required />
@@ -40,6 +41,7 @@
             </ul>
         </form>
         <form action="https://kiminza.pythonanywhere.com/groups/" method="POST" class="form-style-9" id="planVisit">
+            <p>Visit a Home</p>
             <ul>
                 <li>
                     <input type="text" name="group_name" class="field-style field-split align-left" placeholder="Group Name" required />
@@ -99,6 +101,7 @@
             <div id="myData"></div>
         </div> -->
 
+        <p class="banner"><br/>These are the homes registered with us. <a href="javascript:void(0)" onclick="showForm()">Register</a> your Home now or <a href="javascript:void(0)" onclick="showVisitForm()">Visit</a> a home<br/></p>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>
