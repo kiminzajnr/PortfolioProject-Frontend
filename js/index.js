@@ -74,8 +74,6 @@ const myForm = document.getElementById("my-Form");
 myForm.addEventListener("submit", handleFormSubmit);
 const groupForm = document.getElementById("planVisit");
 groupForm.addEventListener("submit", handleFormSubmit);
-// const joinForm = document.getElementById("JoinForm")
-// joinForm.addEventListener("submit", handleFormSubmit);
 
 async function handleFormSubmit(event) {
     event.preventDefault();
