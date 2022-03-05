@@ -56,30 +56,6 @@
                 </li>
             </ul>
         </form>
-        <!-- <form action="http://127.0.0.1:8000/Join_Group/" method="POST" class="form-style-9" id="JoinForm">
-            <ul>
-                <li>
-                    <input type="text" name="member_name" class="field-style field-split align-left" placeholder="Your Name" required />
-                </li>
-                <li>
-                    <input type="text" name="contact" class="field-style field-split align-left" placeholder="Phone Number" required />
-                </li>
-                <li>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label ">
-                            Group name
-                        </label>
-                        <div class="col-sm-10">
-                            <select class="form-control" name="group_name">
-
-                            </select>
-                        </div>
-                </li>
-                <li>
-                    <input type="submit" value="Plan Visit" />
-                </li>
-            </ul>
-        </form> -->
 
         <button class="open-button" onclick="openForm()">Donate</button>
         <div class="form-popup" id="PayForm">
@@ -88,7 +64,10 @@
           
               <label for="phone"><b>Phone Number</b></label>
               <input type="text" placeholder="07XXXXXXXX" name="phone_number" required>
-              
+
+              <label for="amount"><b>Amount</b></label>
+              <input type="text" placeholder="Enter amount" name="amount" required>
+
               <label for="email"><b>Email</b></label>
               <input type="text" placeholder="Enter Email" name="email" required>
           
@@ -96,11 +75,6 @@
               <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
             </form>
           </div>
-<!-- 
-        <div class="card">
-            <div id="myData"></div>
-        </div> -->
-
         <p class="banner"><br/>These are the homes registered with us. <a href="javascript:void(0)" onclick="showForm()">Register</a> your Home now or <a href="javascript:void(0)" onclick="showVisitForm()">Visit</a> a home<br/></p>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
         <script type="text/javascript" src="js/index.js"></script>
