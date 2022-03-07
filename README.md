@@ -20,7 +20,8 @@ This site consumes endpoints built from [this repo](https://github.com/kiminzajn
 
 > - Register a Home
 
-> - adds a home to the database
+> adds a home to the database
+
 ![Register a Home](img/registerhome.png "Regiter Home")
 
 ---
