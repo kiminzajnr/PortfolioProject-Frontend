@@ -1,4 +1,4 @@
-# Frontend for my PortFolio project
+# Frontend for my PortFolio project (OFAN)
 
 This site consumes endpoints built from [this repo](https://github.com/kiminzajnr/PortfolioProject--BackEnd) and aims to enable individuals to easily extend help to Orphans and Children Homes through contributions and visits.
 ![Live Here](https://kiminzajnr.github.io/PortfolioProject-Frontend/)
