@@ -1,7 +1,7 @@
 # Frontend for my PortFolio project (OFAN)
 
 This site consumes endpoints built from [this repo](https://github.com/kiminzajnr/PortfolioProject--BackEnd) and aims to enable individuals to easily extend help to Orphans and Children Homes through contributions and visits.
-![Live Here](https://kiminzajnr.github.io/PortfolioProject-Frontend/)
+[Live Here](https://kiminzajnr.github.io/PortfolioProject-Frontend/)
 
 #### Tech/ Framework
 
@@ -29,7 +29,7 @@ This site consumes endpoints built from [this repo](https://github.com/kiminzajn
 > - Plan a Visit
 
 > enable individual book a visit date and home to visit
-![Plan a Visit](img/planvisit.png) "plan a visit")
+![Plan a Visit](img/planvisit.png)
 
 > - List Homes
 
